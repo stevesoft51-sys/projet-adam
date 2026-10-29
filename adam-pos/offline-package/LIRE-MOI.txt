@@ -1,0 +1,82 @@
+============================================================
+   RESTAURANT ADAM — Installation Windows
+============================================================
+
+INSTALLATION
+------------
+
+1. Copiez le dossier "offline-package" sur une cle USB
+
+2. Branchez la cle USB sur la machine Windows
+
+3. Ouvrez le dossier et double-cliquez sur "installer.bat"
+
+4. Attendez la fin de l'installation (3-5 minutes)
+
+5. Un raccourci "Restaurant ADAM" apparait sur le Bureau
+
+
+PREMIER LANCEMENT
+-----------------
+
+1. Double-cliquez sur "Restaurant ADAM" sur le Bureau
+
+2. La fenetre d'activation s'affiche
+   Saisissez la cle : ADAM-2024-POS-UNIVERSAL
+
+3. Connectez-vous :
+   Identifiant : adam
+   Mot de passe : adam
+
+   Choisissez la langue (Français / English / العربية) au moment
+   de la connexion. Elle est propre a chaque utilisateur et
+   pre-selectionnee a ses prochaines connexions.
+
+
+PRINCIPALES FONCTIONS
+---------------------
+
+- Multilingue (Français, Anglais, Arabe) — 100% hors-ligne :
+  la langue se choisit a la connexion
+- Adaptation a toutes les tailles d'ecran :
+  * les sections s'etirent pour occuper tout l'ecran proportionnellement
+  * sur petit ecran, un defilement vertical apparait dans chaque onglet
+    pour que rien (boutons, listes) ne soit inacessible
+- Point de vente (produits, paiements, mode de service, tables)
+- Plan de salle (tables & boucaros)
+- Caisse (sessions, entrees/sorties, cloture)
+- Menu & produits (avec images)
+- Stocks (ingredients, mouvements, recettes)
+- Fournisseurs & livraisons :
+  * reception de stocks
+  * conversion d'unite (ex : 5 kg achetes deviennent 20 pi eces
+    de boeuf en stock, cout unitaire = prix total / 20)
+  * paiements / dettes
+- Personnel & salaires :
+  * salaire mensuel fixe par employ e
+  * avances sur salaire (deduites)
+  * solde / net a verser en fin de mois
+  * ROLES : creez des rôles (Cuisine, Serveur, ...) et choisissez
+    les onglets accessibles a chacun
+- Rapports PDF (ventes, caisse, stock, fournisseurs)
+  * "Rapports d'hier" : genere les 4 rapports de la journee precedente
+  * periode "Hier" analysable sur le tableau de bord
+
+
+CONTENU DU DOSSIER
+------------------
+
+- installer.bat          Script d'installation automatique
+- python-3.12.7-amd64.exe Installateur Python (offline)
+- wheels/                Dependances Python pre-telechargees
+- app/                   Code source de l'application
+- data/                  Donnees par defaut
+- fonts/                 Polices pour les rapports PDF
+- main.py                Point d'entree
+- RestaurantADAM.spec    Configuration de compilation
+
+
+APPUI TECHNIQUE
+---------------
+
+Cle d'activation : ADAM-2024-POS-UNIVERSAL

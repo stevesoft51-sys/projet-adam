@@ -1,0 +1,12 @@
+[
+  {
+    "product_id": 2,
+    "ingredient_id": 2,
+    "qty": 1.0
+  },
+  {
+    "product_id": 1,
+    "ingredient_id": 1,
+    "qty": 2.0
+  }
+]

@@ -1,0 +1,3 @@
+rapport de bug 
+le client veux pouvoir corriger les erreur de montant apres enregistrement chez le fournisseur en modifier les information enregistrer 
+et toutes les champsz d'entrer d'argent doivent etre initiaiser vide pour eviter les erreurs de frappes clavier tous les processus d'enregistrement sensible dovent recevoir une confirmatin supplementiare 

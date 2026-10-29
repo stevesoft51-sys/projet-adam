@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "at": "2026-08-28 20:41:21",
+    "ingredient_id": 1,
+    "ingredient_name": "poulet",
+    "unit": "pièce",
+    "type": "in",
+    "qty": 9.0,
+    "before": 0.0,
+    "after": 9.0,
+    "reason": "Réception fournisseur — faysal",
+    "by": "Administrateur"
+  },
+  {
+    "id": 2,
+    "at": "2026-09-01 11:37:54",
+    "ingredient_id": 1,
+    "ingredient_name": "poulet",
+    "unit": "pièce",
+    "type": "out",
+    "qty": 2.0,
+    "before": 9.0,
+    "after": 7.0,
+    "reason": "Vente T20260901-0001",
+    "by": "vente auto"
+  },
+  {
+    "id": 3,
+    "at": "2026-09-01 11:45:50",
+    "ingredient_id": 2,
+    "ingredient_name": "poisson",
+    "unit": "pièce",
+    "type": "in",
+    "qty": 23.0,
+    "before": 0.0,
+    "after": 23.0,
+    "reason": "Achat marché",
+    "by": "Administrateur"
+  },
+  {
+    "id": 4,
+    "at": "2026-09-01 11:50:36",
+    "ingredient_id": 2,
+    "ingredient_name": "poisson",
+    "unit": "pièce",
+    "type": "out",
+    "qty": 2.0,
+    "before": 23.0,
+    "after": 21.0,
+    "reason": "Vente T20260901-0002",
+    "by": "vente auto"
+  }
+]

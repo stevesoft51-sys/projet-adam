@@ -1,0 +1,229 @@
+===============================================
+   RESTAURANT ADAM - Guide de lancement local
+===============================================
+
+Ce guide vous permet de tester l'application en local sur votre machine.
+
+PRE-REQUIS
+----------
+- PHP 8.x installe (php -v pour verifier)
+- MySQL ou MariaDB installe (mysql --version pour verifier)
+- Un navigateur web
+
+ETAPE 1 : Verifier PHP et MySQL
+---------------------------------
+Ouvrez un terminal et tapez :
+
+    php -v
+    mysql --version
+
+Si PHP n'est pas installe :
+    sudo apt update
+    sudo apt install php php-mysql php-mbstring php-xml php-gd php-curl
+
+Si MySQL n'est pas installe :
+    sudo apt install mysql-server
+
+Demarrez MySQL :
+    sudo systemctl start mysql
+    sudo systemctl enable mysql
+
+
+ETAPE 2 : Creer la base de donnees
+------------------------------------
+Connectez-vous a MySQL :
+
+    mysql -u root -p
+
+Entrez votre mot de passe, puis tapez :
+
+    CREATE DATABASE adam_restaurant CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    CREATE USER 'adam_user'@'localhost' IDENTIFIED BY 'adam_pass';
+    GRANT ALL PRIVILEGES ON adam_restaurant.* TO 'adam_user'@'localhost';
+    FLUSH PRIVILEGES;
+    EXIT;
+
+
+ETAPE 3 : Importer le schema
+------------------------------
+Placez-vous dans le dossier du projet, puis :
+
+    mysql -u adam_user -p adam_restaurant < database/schema.sql
+
+Si vous voulez les donnees de demo (plats, categories, tables, users) :
+
+    mysql -u adam_user -p adam_restaurant < database/seed.sql
+
+
+ETAPE 4 : Configurer la connexion
+------------------------------------
+Ouvrez le fichier config/database.php avec un editeur de texte :
+
+    nano config/database.php
+
+Modifiez les valeurs :
+
+    'host'     => '127.0.0.1',
+    'database' => 'adam_restaurant',
+    'username' => 'adam_user',
+    'password' => 'adam_pass',
+
+Sauvegardez (Ctrl+O, Entree, Ctrl+X).
+
+
+ETAPE 5 : Creer le dossier d'uploads
+---------------------------------------
+    mkdir -p public/images/uploads/menu
+    chmod 755 public/images/uploads
+    chmod 755 public/images/uploads/menu
+
+
+ETAPE 6 : Demarrer le serveur PHP
+------------------------------------
+Depuis la racine du projet (la ou se trouve index.php) :
+
+    php -S 127.0.0.1:8000 router.php
+
+Le fichier router.php est indispensable : il sert les fichiers
+statiques (CSS, JS, images) depuis le dossier public/.
+
+Le serveur demarre. Vous verrez :
+
+    PHP Development Server http://127.0.0.1:8000 started
+
+
+ETAPE 7 : Tester l'application
+---------------------------------
+Ouvrez votre navigateur et allez sur :
+
+    http://127.0.0.1:8000
+
+Pour l'interface client (vitrine) :
+    http://127.0.0.1:8000/
+
+Pour l'administration :
+    http://127.0.0.1:8000/admin
+
+Page de connexion :
+    http://127.0.0.1:8000/login
+
+
+IDENTIFIANTS DE TEST
+----------------------
+Email       : admin@adam.com
+Mot de passe: admin123
+
+Autres comptes :
+    manager@adam.com  / password123  (Manager)
+    kofi@adam.com     / password123 (Serveur)
+    aya@adam.com      / password123  (Serveur)
+    moussa@adam.com   / password123  (Cuisinier)
+    fatou@adam.com     / password123  (guichet)
+
+
+ALTERNATIVE : Utiliser install.php
+-------------------------------------
+Si vous n'avez pas importe le schema manuellement :
+
+    1. Demarrez le serveur : php -S 127.0.0.1:8000
+    2. Allez sur : http://127.0.0.1:8000/install.php
+    3. Entrez vos identifiants MySQL
+    4. Cliquez sur "Installer"
+    5. SUPPRIMEZ install.php ensuite
+    6. Connectez-vous a /login
+
+
+TESTER CHAQUE MODULE
+---------------------
+
+1. DASHBOARD :
+   http://127.0.0.1:8000/admin/dashboard
+
+2. MENU :
+   http://127.0.0.1:8000/admin/menu
+   -> Ajouter un plat avec photo
+   -> Creer des categories
+   -> Tester l'affichage client : http://127.0.0.1:8000/menu
+
+3. STOCK :
+   http://127.0.0.1:8000/admin/stock
+   -> Ajouter des ingredients
+   -> Faire des mouvements de stock
+
+4. POINT DE VENTE (POS) :
+   http://127.0.0.1:8000/admin/orders/pos
+   -> Selectionner des produits
+   -> Choisir une table
+   -> Valider la commande
+
+5. CUISINE :
+   http://127.0.0.1:8000/admin/orders/kitchen
+   -> Voir les commandes arrivees
+   -> Changer les statuts
+
+6. PLAN DE SALLE :
+   http://127.0.0.1:8000/admin/tables
+   -> Cliquer sur les tables pour changer leur statut
+
+7. RESERVATIONS :
+   http://127.0.0.1:8000/admin/reservations
+   -> Creer une reservation
+   -> Tester la reservation client : http://127.0.0.1:8000/reservation
+
+8. CAISSE :
+   http://127.0.0.1:8000/admin/cash
+   -> Ouvrir la caisse
+   -> Ajouter des mouvements
+
+9. PERSONNEL :
+   http://127.0.0.1:8000/admin/staff
+   -> Ajouter du personnel
+   -> Planning : http://127.0.0.1:8000/admin/staff/schedule
+
+10. FIDELITE :
+    http://127.0.0.1:8000/admin/loyalty
+    -> Creer une carte fidelite
+
+11. RAPPORTS :
+    http://127.0.0.1:8000/admin/reports
+    -> Voir les ventes et analytics
+
+12. PARAMETRES :
+    http://127.0.0.1:8000/admin/settings
+    -> Modifier le nom du restaurant
+
+
+DEPANNAGE
+----------
+
+ERREUR "Class 'PDO' not found" :
+    sudo apt install php-pdo php-mysql
+
+ERREUR "Cannot connect to database" :
+    Verifiez config/database.php
+    Verifiez que MySQL tourne : sudo systemctl status mysql
+
+ERREUR "404 page non trouvee" :
+    Assurez-vous d'utiliser php -S (pas un autre serveur)
+    Le fichier .htaccess est gere automatiquement par php -S
+
+ERREUR "Permission denied" pour les uploads :
+    chmod -R 755 public/images/
+
+BLANC TOTAL / ERREUR PHP :
+    php -l index.php
+    php -l core/App.php
+    -> Verifiez les erreurs de syntaxe
+
+ARRETER LE SERVEUR :
+    Ctrl+C dans le terminal
+
+
+COMMANDE RAPIDE (tout-en-un)
+-------------------------------
+    cd "/home/steve/Desktop/projet Adam"
+    mkdir -p public/images/uploads/menu
+    php -S 127.0.0.1:8000 router.php
+
+NB : l'argument "router.php" est OBLIGATOIRE avec le serveur PHP
+integre, sinon les fichiers CSS/JS/images renvoient une erreur 404.

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Plats",
+    "sort_order": 1,
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Entrées",
+    "sort_order": 2,
+    "active": true
+  },
+  {
+    "id": 3,
+    "name": "Grillades",
+    "sort_order": 3,
+    "active": true
+  },
+  {
+    "id": 4,
+    "name": "Compléments",
+    "sort_order": 4,
+    "active": true
+  },
+  {
+    "id": 5,
+    "name": "Boissons chaudes",
+    "sort_order": 5,
+    "active": true
+  },
+  {
+    "id": 6,
+    "name": "Boissons froides",
+    "sort_order": 6,
+    "active": true
+  },
+  {
+    "id": 7,
+    "name": "Desserts",
+    "sort_order": 7,
+    "active": true
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "number": "T20260901-0001",
+    "datetime": "2026-09-01 11:37:54",
+    "items": [
+      {
+        "product_id": 1,
+        "name": "poulet DG",
+        "qty": 2,
+        "price": 3000.0,
+        "total": 6000.0
+      }
+    ],
+    "subtotal": 6000.0,
+    "discount": 0.0,
+    "total": 6000.0,
+    "method": "cash",
+    "status": "paid",
+    "cashier_id": 1,
+    "cashier": "Administrateur",
+    "service_mode": "takeaway",
+    "unit_name": null,
+    "received": 6000.0,
+    "change": 0.0
+  },
+  {
+    "id": 2,
+    "number": "T20260901-0002",
+    "datetime": "2026-09-01 11:50:36",
+    "items": [
+      {
+        "product_id": 2,
+        "name": "poisson",
+        "qty": 2,
+        "price": 4000.0,
+        "total": 8000.0
+      }
+    ],
+    "subtotal": 8000.0,
+    "discount": 0.0,
+    "total": 8000.0,
+    "method": "cash",
+    "status": "paid",
+    "cashier_id": 1,
+    "cashier": "Administrateur",
+    "service_mode": "takeaway",
+    "unit_name": null,
+    "received": 8000.0,
+    "change": 0.0
+  }
+]

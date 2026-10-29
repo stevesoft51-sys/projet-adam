@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "at": "2026-08-28 20:41:21",
+    "supplier_id": 1,
+    "supplier_name": "faysal",
+    "ingredient_id": 1,
+    "ingredient_name": "poulet",
+    "qty": 5.0,
+    "purchase_unit": "kg",
+    "ing_unit": "pièce",
+    "units_per_purchase": 9.0,
+    "stock_qty": 9.0,
+    "unit_cost": 222.22,
+    "total": 10000.0,
+    "by": "Administrateur"
+  }
+]

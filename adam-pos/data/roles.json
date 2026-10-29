@@ -1,0 +1,25 @@
+[
+  {
+    "key": "admin",
+    "name": "Administrateur",
+    "modules": [
+      "dashboard",
+      "pos",
+      "cash",
+      "floor",
+      "menu",
+      "stock",
+      "suppliers",
+      "staff"
+    ]
+  },
+  {
+    "key": "caissiere",
+    "name": "Caissière",
+    "modules": [
+      "pos",
+      "cash",
+      "floor"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Poulet (carcasse)",
+    "unit": "kg",
+    "current_stock": 25.0,
+    "min_stock": 5.0,
+    "cost_price": 3000
+  },
+  {
+    "id": 2,
+    "name": "Bœuf",
+    "unit": "kg",
+    "current_stock": 18.0,
+    "min_stock": 4.0,
+    "cost_price": 4500
+  },
+  {
+    "id": 3,
+    "name": "Mouton",
+    "unit": "kg",
+    "current_stock": 10.0,
+    "min_stock": 3.0,
+    "cost_price": 5000
+  },
+  {
+    "id": 4,
+    "name": "Poisson frais",
+    "unit": "kg",
+    "current_stock": 12.0,
+    "min_stock": 3.0,
+    "cost_price": 3500
+  },
+  {
+    "id": 5,
+    "name": "Riz",
+    "unit": "kg",
+    "current_stock": 40.0,
+    "min_stock": 10.0,
+    "cost_price": 700
+  },
+  {
+    "id": 6,
+    "name": "Spaghetti",
+    "unit": "kg",
+    "current_stock": 15.0,
+    "min_stock": 4.0,
+    "cost_price": 900
+  },
+  {
+    "id": 7,
+    "name": "Huile",
+    "unit": "L",
+    "current_stock": 20.0,
+    "min_stock": 5.0,
+    "cost_price": 1600
+  },
+  {
+    "id": 8,
+    "name": "Tomate fraîche",
+    "unit": "kg",
+    "current_stock": 12.0,
+    "min_stock": 4.0,
+    "cost_price": 800
+  },
+  {
+    "id": 9,
+    "name": "Oignon",
+    "unit": "kg",
+    "current_stock": 10.0,
+    "min_stock": 3.0,
+    "cost_price": 600
+  },
+  {
+    "id": 10,
+    "name": "Plantain",
+    "unit": "kg",
+    "current_stock": 20.0,
+    "min_stock": 5.0,
+    "cost_price": 500
+  },
+  {
+    "id": 11,
+    "name": "Pomme de terre",
+    "unit": "kg",
+    "current_stock": 15.0,
+    "min_stock": 5.0,
+    "cost_price": 600
+  },
+  {
+    "id": 12,
+    "name": "Œufs",
+    "unit": "pièce",
+    "current_stock": 90.0,
+    "min_stock": 30.0,
+    "cost_price": 125
+  }
+]

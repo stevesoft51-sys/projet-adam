@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "Poulet DG",
+    "price": 4000,
+    "description": "Poulet sauté, plantain, légumes",
+    "available": true
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "Poulet Grillé",
+    "price": 3500,
+    "description": "Poulet grillé au feu de bois, sauce au choix",
+    "available": true
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "name": "Poulet Pané Broasted",
+    "price": 4000,
+    "description": "Poulet croustillant frit sous pression",
+    "available": true
+  },
+  {
+    "id": 4,
+    "category_id": 1,
+    "name": "Steak sauce crème",
+    "price": 5000,
+    "description": "Filet de bœuf, sauce crème fraîche",
+    "available": true
+  },
+  {
+    "id": 5,
+    "category_id": 1,
+    "name": "Spaghetti sauce blanche poulet",
+    "price": 4500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "name": "Émincé de Bœuf",
+    "price": 3500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 7,
+    "category_id": 1,
+    "name": "Poisson aux câpres",
+    "price": 4000,
+    "description": "Poisson poêlé, sauce câpres",
+    "available": true
+  },
+  {
+    "id": 8,
+    "category_id": 1,
+    "name": "Brochette de poulet",
+    "price": 3000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 9,
+    "category_id": 2,
+    "name": "Salade de crudités",
+    "price": 2000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 10,
+    "category_id": 2,
+    "name": "Ndolé",
+    "price": 3000,
+    "description": "Plat national camerounais",
+    "available": true
+  },
+  {
+    "id": 11,
+    "category_id": 2,
+    "name": "Omelette plantain",
+    "price": 2000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 12,
+    "category_id": 3,
+    "name": "Brochette de mouton",
+    "price": 4500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 13,
+    "category_id": 3,
+    "name": "Chich Kebab",
+    "price": 3500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 14,
+    "category_id": 3,
+    "name": "Kafta",
+    "price": 3500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 15,
+    "category_id": 4,
+    "name": "Frites",
+    "price": 1000,
+    "description": "Portion de frites maison",
+    "available": true
+  },
+  {
+    "id": 16,
+    "category_id": 4,
+    "name": "Riz parfumé",
+    "price": 1000,
+    "description": "Portion de riz",
+    "available": true
+  },
+  {
+    "id": 17,
+    "category_id": 4,
+    "name": "Plantain mûr",
+    "price": 1000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 18,
+    "category_id": 5,
+    "name": "Café",
+    "price": 800,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 19,
+    "category_id": 5,
+    "name": "Thé",
+    "price": 500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 20,
+    "category_id": 5,
+    "name": "Cappuccino",
+    "price": 1000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 21,
+    "category_id": 6,
+    "name": "Jus naturel (bissap/gingembre)",
+    "price": 1000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 22,
+    "category_id": 6,
+    "name": "Boisson gazeuse",
+    "price": 600,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 23,
+    "category_id": 6,
+    "name": "Eau grande bouteille",
+    "price": 700,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 24,
+    "category_id": 6,
+    "name": "Yaourt",
+    "price": 1000,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 25,
+    "category_id": 7,
+    "name": "Fruits de saison",
+    "price": 1500,
+    "description": "",
+    "available": true
+  },
+  {
+    "id": 26,
+    "category_id": 7,
+    "name": "Cake maison",
+    "price": 1500,
+    "description": "",
+    "available": true
+  }
+]
